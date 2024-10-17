@@ -17,10 +17,10 @@ def minOperations(n):
     while done < n:
         if clipboard == 0:
             # init (the first copy all and paste)
-            clipboard = done # copy all
-            done = done + clipboard # paste
-            ops_count = ops_count + 2 # increment operatoions by 2 as copy all and paste has occured
-        elif n - done > 0 and (n - done) % done == 0: # checks if there are still more H's needed to equal n and if the number of H's in clipvoard is a multiple of itself
+            clipboard = done  # copy all
+            done = done + clipboard  # paste
+            ops_count = ops_count + 2
+        elif n - done > 0 and (n - done) % done == 0:
             # copy all and paste
             clipboard = done
             done = done + clipboard
